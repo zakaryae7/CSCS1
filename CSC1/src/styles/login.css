@@ -1,0 +1,115 @@
+@keyframes loading {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: linear-gradient(to bottom right, rgb(76, 29, 76), darkviolet);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    color: white;
+}
+
+/* Navbar styling */
+nav{
+    display: flex;
+    justify-content: center;
+    margin: 1.25rem 2rem;
+    gap: 2rem;
+}
+nav img{
+    height: 4vh;
+}
+.redzonelogo{
+    border-right: 1px solid white;
+    padding-right: 2rem;
+}
+
+/* Form styling */
+.signUp{
+    padding: 3rem 2rem;
+    display: block;
+    width: max-content;
+    margin: 4rem auto;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255, 0.25);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.signUp form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.signUp form input{
+    background-color: transparent;
+    border: 1px solid white ;
+    border-radius: 15px;
+    padding: 10px 20px 10px 15px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    width: 100%;
+}
+.signUp form input::placeholder{
+    color: white;
+}
+.signUp form input:focus{
+    outline: 1px solid white;
+    background-color: transparent;
+}
+.signUp form input:focus::placeholder{
+    opacity: 0;
+}
+.submit{
+    cursor: pointer;
+    background-color: white;
+    color: darkviolet;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    transition: 300ms;
+    border-radius: 15px;
+    padding: 10px 20px 10px 15px;
+    font-size: 15px;
+    width: 100%;
+    border: none;
+    margin-top: 1rem;
+}
+.submit:hover{
+    transform: scale(1.05);
+}
+.signUp h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.made{
+    text-align: center;
+}
+#error{
+    color: rgb(181, 22, 22);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+}
+#ezz{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 100%;
+}
+#ezz img{
+    animation: loading 1s ease-out infinite;
+    height: 5vh;
+}
